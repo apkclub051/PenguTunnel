@@ -3,7 +3,7 @@
 set -Eeuo pipefail
 
 REPO="https://github.com/apkclub051/PenguTunnel"
-ZIP_URL="$REPO/raw/refs/heads/main/PenguTunnel-v5.0.4-Offline.zip"
+ZIP_URL="$REPO/raw/refs/heads/main/PenguTunnel-v5.1.2-Offline.zip""
 
 if [[ $EUID -ne 0 ]]; then
   echo "Please run as root."
