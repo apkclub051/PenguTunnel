@@ -24,10 +24,10 @@ curl -fL --retry 2 "$ZIP_URL" -o "$WORK/PenguTunnel.zip"
 
 unzip -q "$WORK/PenguTunnel.zip" -d "$WORK"
 
-INSTALLER="$WORK/PenguTunnel-5.0.4-Offline/install.sh"
+INSTALLER="$WORK/PenguTunnel-5.1.2-Offline/install.sh""
 
 if [[ ! -f "$INSTALLER" ||
-      ! -f "$WORK/PenguTunnel-5.0.4-Offline/pengutunnel" ]]; then
+      !    -f "$WORK/PenguTunnel-5.1.2-Offline/pengutunnel" ]]; then
   echo "Required files are missing."
   exit 1
 fi
