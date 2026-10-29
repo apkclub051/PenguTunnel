@@ -11,10 +11,10 @@ if [[ $EUID -ne 0 ]]; then
 fi
 
 for cmd in curl sha256sum unzip; do
-  if ! command -v "$cmd" >/dev/null 2>&1; then
-    echo "Missing dependency: $cmd"
-    exit 1
-  fi
+    if ! command -v "$cmd" >/dev/null 2>&1; then
+        echo "Missing dependency: $cmd"
+        exit 1
+    fi
 done
 
 WORK="$(mktemp -d)"
