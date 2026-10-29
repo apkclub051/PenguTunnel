@@ -10,9 +10,9 @@ if [[ $EUID -ne 0 ]]; then
   exit 1
 fi
 
-for cmd in curl sha256sum unzip; do
-    if ! command -v "$cmd" >/dev/null 2>&1; then
-        echo "Missing dependency: $cmd"
+for utility in curl sha256sum unzip; do
+    if ! command -v "$utility" >/dev/null 2>&1; then
+        echo "Missing dependency: $utility"
         exit 1
     fi
 done
