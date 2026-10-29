@@ -3,7 +3,7 @@
 set -Eeuo pipefail
 
 REPO="https://github.com/apkclub051/PenguTunnel"
-ZIP_URL="$REPO/raw/refs/heads/main/PenguTunnel-v5.1.2-Offline.zip""
+ZIP_URL="$REPO/raw/refs/heads/main/PenguTunnel-v5.1.2-Offline.zip"
 
 if [[ $EUID -ne 0 ]]; then
   echo "Please run as root."
@@ -24,7 +24,7 @@ curl -fL --retry 2 "$ZIP_URL" -o "$WORK/PenguTunnel.zip"
 
 unzip -q "$WORK/PenguTunnel.zip" -d "$WORK"
 
-INSTALLER="$WORK/PenguTunnel-5.1.2-Offline/install.sh""
+INSTALLER="$WORK/PenguTunnel-5.1.2-Offline/install.sh"
 
 if [[ ! -f "$INSTALLER" ||
       !    -f "$WORK/PenguTunnel-5.1.2-Offline/pengutunnel" ]]; then
